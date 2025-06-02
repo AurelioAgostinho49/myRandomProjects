@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none; /*tira as bolinhas da lista*/
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    overflow: hidden; /*tira o scrow do mouse*/
+}
+
+/*color - muda a cor do texto */
+
+/* Another option:
+header img{
+} 
+*/
+header{
+
+    position: fixed; /* Faz com que a header do site nao mude quanto o usuario usar o scroll do mouse*/
+    left: 50%;
+
+    width: 90%;/*depois pesquisar o que faz*/
+
+    transform: translateX(-50%); /*gambiarra para alinhar ao centro*/
+    display: grid; /*set a grid in the logo and the list*/
+    align-items: center;
+    grid-template-columns: 1fr 600px; /* organiza quanto da pagina cada elemento ira compor*/
+    gap: 10%;/*estabelece o espaco entre elementos do grid*/
+    z-index: 2; /*define a camada do element*/
+
+    & img{
+        width: 250px;
+            };
+    & nav{
+        & ul{
+            display: grid;
+            grid-template-columns: repeat(3,200px);
+
+        }
+
+        
+    }
+}
+
+section{
+    background-image: radial-gradient(#7f3d9e,#6d00d9);
+
+    height: 100vh; /*depois pesquisar o que faz*/
+    position: relative;
+
+    & .list{
+        width: 70vw;
+        height:100%;
+        margin: auto;
+        position: relative;
+
+        & .item{
+            position:absolute;
+            inset: 0; /* persquisar tambem pesquisar sobre o top e o bottom*/
+        }
+
+        & .car-img{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 70%;
+
+            & img{
+                width: 100%;
+                transform: rotate(-20deg);
+            }
+
+            & .content{
+                position: absolute;
+            }
+        }
+    }
+}
+
+
+.arrows{
+    & button{
+        & img{
+            width: 100px;
+        }
+    }
+}
+
