@@ -16,7 +16,7 @@ I created this repository to record the projects I will do along this year in So
 
 Access my Index by clicking in the image below (which portrays my favorite biblical passage).
 
-[![Jacob](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/024.Jacob_Wrestles_with_the_Angel.jpg/960px-024.Jacob_Wrestles_with_the_Angel.jpg "Jacob")](./Myprojects-Index/index.html)
+[![Jacob](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/024.Jacob_Wrestles_with_the_Angel.jpg/960px-024.Jacob_Wrestles_with_the_Angel.jpg "Jacob")](https://aurelioagostinho49.github.io/myRandomProjects/)
 
 ## Some random code I want to unterstand :D
 
