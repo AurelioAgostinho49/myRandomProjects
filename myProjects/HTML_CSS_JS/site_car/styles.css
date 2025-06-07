@@ -89,12 +89,31 @@ section{
             & .carInformation{
                 font-weight: bold;
             }
+        }
 
+<<<<<<< HEAD
+=======
+        & .content{
+            position: absolute;
+            right: 150px;
+            width: 70%;
+            display: flex;
+            flex-direction: columnS;
+            justify-content: end;
+            align-items: end;
+
+            & .carInformation{
+                font-weight: bold;
+
+            }
+
+>>>>>>> ac3cfac (alterações - CSS carro)
             & h2{
                 font-size: 8em;
                 line-height: 1em;
             }
 
+<<<<<<< HEAD
             .description{
                 color: #d9d9d9;
                 text-align: right;
@@ -112,8 +131,27 @@ section{
                 background-color: #beff1b;
                 color: black;
                 cursor: pointer;
+=======
+            & .description{
+                color: #ababab;
+                font-size: 12px;
+                text-align: right;
+                max-width: 400px;
+            }
+
+            & button{
+                border-radius:30px;
+                height: 35px;
+                width:120px;
+                text-transform: uppercase;
+                border: 2px solid #791fd3;
+                background-color: #beff1b;
+                color:black;
+                cursor:pointer;
+>>>>>>> ac3cfac (alterações - CSS carro)
             }
         }
+
     }
 }
 
