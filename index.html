@@ -1,33 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>myRamdomProjects</title>
-  <link rel="stylesheet" href="myRandomProjectsStyle.css">
+  <title>Aurelio Agostinho | Portifolio</title>
+  <link rel="stylesheet"href="style.css">
 </head>
-
 <body>
 
-<div class = "logo"></div>
-  <a href="https://github.com/AurelioAgostinho49/myRandomProjects">
-  <i class="logomarca"></i>
-  </a>
+  <div class="particulas"></div>
+    <nav>
+      <ul id="menu">
+        <li><a href="#Inicio" class="menu-link">Inicio</a></li>
+        <li><a href="#Sobre" class="menu-link">Sobre</a></li>
+        <li><a href="#Projetos" class="menu-link">Projetos</a></li>
+        <li><a href="#Contato" class="menu-link">Contato</a></li>
+      </ul>
+    </nav>
 
-  <ul class = "menu">
-    <li>
-      <a class="menu_li">Home</a>
-    </li>
-    <li>
-      <a class="menu_li">CodeCamp</a>
-    </li>
-    <li>
-      <a class="menu_li">Java</a>
-    </li>
-    <li>
-      <a class="menu_li">Random</a>
-    </li>
-  </ul>
-</div>
+    <main id="Inicio" class="header">
+      
+      <div>
+      <img src="Myphoto.jpeg" alt="Foto do Aurelio">
+      <div class="texto">
+      <h1>Aurelio Franca</h1>
+      <p>Estudante de Programacao</p>
+      </div>
+      </div>
+    
+    </main>
+
+    <section id="Sobre" class="sobre">
+  
+    <div class="sobreMim">
+    <h2>
+      Sobre Mim
+    </h2>
+    <p>
+      Meu nome é Aurélio Agostinho Teixeira França. Estou estudando programação há um ano. Desde que decidi vir a
+      Recife e participar do "Projeto Soli Deo Gloria", localizado no Monte Moriá, tenho me dedicado intensamente
+      aos estudos.
+
+      Desde minha chegada, venho aprendendo CSS, HTML, JavaScript, Java, bem como conteúdos mais avançados,
+      como API, React e OSGi. Estudei todos esses assuntos que, até alguns meses atrás, eram completamente
+      novos para mim. Tenho conseguido adquirir esse conhecimento em poucos meses.
+    </p>
+    </div>
+    </section>
+
+    <section id="Projetos" class="meusProjetos">
+      <h2 class="tituloProjeto">Meus Projetos</h2>
+      <div class="projectsTodos">
+        <div class="quadrado">
+          <img src="projeto.jpeg" class="imagens"><img>
+          <div class="textoProjeto">
+            <h3>Loja de Carros</h3>
+            <p>Loja virtual moderna</p>
+          </div>
+        </div>
+
+        <div class="quadrado">
+          <img src="projeto.jpeg" class="imagens"><img>
+          <div class="textoProjeto">
+            <h3>Loja de Carros</h3>
+            <p>Loja virtual moderna</p>
+          </div>
+        </div>
+
+        <div class="quadrado">
+          <img src="projeto.jpeg" class="imagens"><img>
+          <div class="textoProjeto">
+            <h3>Loja de Carros</h3>
+            <p>Loja virtual moderna</p>
+          </div>
+      </div>
+    </section>
+  
+    <section id="Contato" class="contatos">
+      <h2>Contatos</h2>
+      <form onsubmit="enviarWhats(event)">
+      
+        <div>
+        <input class="formulario" id="nome" placeholder="Nome">
+        <textarea class="formulario" id="texto" placeholder="Digite sua mensagem"></textarea>
+        <button type="submit" class="button">enviar Whatsapp</button>
+        </div>
+
+      </form>
+    </section>
+
+    <script src="index.js">
+    </script>
 </body>
 </html>
