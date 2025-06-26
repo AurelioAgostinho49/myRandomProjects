@@ -1,248 +1,196 @@
 :root{
-    --primaria:#4f46e5;
-    --secundaria:#7c3eed;
-    --escuro:#0f172a;
-    --maisEscuro:#0a0f1c;
-    --claro:#e2e8f0;
-    --vidro:rgba(255,255,255,0.1);
+    --primaria:#DAC397;
+    --gradient:linear-gradient(359deg, rgba(218, 195, 151, 1) 0%, rgba(232, 220, 196, 1) 53%, rgba(245, 241, 235, 1) 100%);
+    --gradient-tokens:linear-gradient(308deg,rgba(218, 195, 151, 1) 0%, rgba(192, 183, 165, 1) 100%);
+    --gradient-form:linear-gradient(144deg,rgba(243, 232, 213, 1) 50%, rgba(238, 236, 232, 1) 100%);
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: var(--escuro);
-    color:var(--claro);
-
-}
-
-nav{
-    position:fixed;
-    background-color: rgba(50, 48, 48, 0.8);
-    top: 0; /* define a distancia do topo, nesse caso 0 */
-    width: 100%;
-    z-index: 100; /* Pesquisar depois no chat GPT */
-    padding: 1.5em; /* test how it works */
-}
-
-#menu{
+.navigationBar{
     display: flex;
-    list-style: none; /* tira a bolinha da lista */
-    gap: 80px;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-}
-
-.menu-link{
-    text-decoration: none; /* tira a linha abaixo do link */
-    color: var(--claro);
-    font-weight: 700;
-    position: relative;
-    padding: 3px;
-}
-
-.menu-link::after{ /* linha debaixo do texto */
-    content: '';
-    height: 2px;
-    width: 0;
-    position:absolute;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
-    transition: width 0.5s ease;
-}
-
-.menu-link:hover::after{
-    width: 100%;
-}
-
-.header{
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position:relative;
-
-    & img{
-        
-        width: 350px;
-        height: 350px;
-        -webkit-box-shadow: 18px 26px 49px 0px rgba(66, 68, 90, 1);
--moz-box-shadow: 18px 26px 49px 0px rgba(66, 68, 90, 1);
-box-shadow: 18px 26px 49px 0px rgba(66, 68, 90, 1);
-        border-radius: 100%;
-        border:4px solid var(--vidro);
-        animation: flutuar 5s ease-in-out infinite;
-    }
-
-    & p{
-        font-size: 1rem;
-        color: var(--claro);
-    }
-}
-
-.texto{
-    position: absolute;
-    top: 550px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-}
-
-h1{
-    font-size: 3.1rem;
-    color: var(--primaria);
-}
-
-h2{
-    font-size: 2.5rem;
-    color: var(--claro);
-}
-.sobreMim{
-    position: relative;
-    top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    gap: 40px;
-
-    & p{
-        width: 750px;
-        text-align: center;
-        border-radius: 20px;
-        background-color: var(--vidro);
-        border: 0.5px solid var(--escuro);
-        padding: 50px;
-        font-size: 20px;
-        backdrop-filter: blur(10px);
-    }
-}
-
-.meusProjetos{
-    text-align: center;
-    position: relative;
-    top: 250px;
-    margin-bottom: 400px;
-
-    & h2{
-        margin-bottom: 50px;
-    }
+    gap: 400px;
+    margin-top: 20px;
 
     & h3{
-        margin-bottom: 10px;
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+        margin-bottom: 0px;
+        font-size: 30.6px;
     }
 
     & p{
-        line-height: 1.25rem;
-    }
-
-    & .textoProjeto{
-        padding: 1.5rem;
+        font-family: "Inter", sans-serif;
+        font-size: 25.5px;
+        font-weight: 100;
+        margin-top: 0px;
+        letter-spacing: 3px;
     }
 }
 
-.projectsTodos{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
 
-.quadrado{
-    background-color: var(--vidro);
-    border-radius: 16px;
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--vidro);
-    overflow: hidden; /* esconde oque sobrar da imagem */
-    transition: all 0.5s ease;
-    cursor: pointer;
-
-    & .imagens{
-        height: 250px;
-        width:100%;
-        object-fit: cover;
+    & a{
+        font-family: "Inter", sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        text-decoration: none;
+        color: black;
     }
+
    
 }
 
-.quadrado:hover{
-    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
-    transform: translateY(-10px) scale(1.03);
-}
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
-.contatos{
-
-    & h2{
-        padding: 6rem 2rem;
-        text-align: center;
-    }
-
-    & form{
-
-        max-width: 600px;
-        margin: 0 auto;
-        background-color: var(--vidro);
-        backdrop-filter: blur(10px);
-        padding: 2rem;
-        border: 1px solid var(--vidro);
-        border-radius: 16px;
+    & .info{
+        position: relative;         
+        margin-top: 130px;
 
     }
-
-    & div{
-        
+    & .socialMedia{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        gap: 15px;
+    }
 
+    & .imagesMedia{
+        width: 30.4px;
         
     }
 
- 
-    & input{
-      width: 100%;
-      padding: 1rem;
-      background: var(--vidro);
-      border-radius: 8px;
-      color: var(--claro);
-      margin-bottom: 20px;
-      border: 1px solid var(--vidro);
-      outline: none; /* faz com que nao mostre mais a selecao do elemento*/
-    
+    .imagesMedia:hover{
+        transform: translateY(-10px) scale(1.03);
     }
 
-    & textarea{
-        width: 100%;
-      padding: 1rem;
-      background: var(--vidro);
-      border-radius: 8px;
-      color: var(--claro);
-      margin-bottom: 20px;
-      border: 1px solid var(--vidro);
-      outline: none;
-    }
-    
-    & input:focus{
-        border-color: var(--secundaria);
-        box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    & h1{
+        margin-top: 30px;
+        font-family: "Inter", sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        margin-bottom: 0px;
     }
 
-    & textarea:focus{
-        border-color: var(--secundaria);
-        box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    & p{
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 200;
+        width: 470px;
+        margin-top: 25px;
     }
+
+    & button{
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        width: 300px;
+        height: 50px;
+        border-radius: 34px;
+        border: 0px;
+        background-color: var(--primaria);
+        color: black;
+        cursor:pointer;
+        outline: none;
+        box-shadow: 0 0px 20px var(--primaria);
+        margin-top: 60px;
+    }
+
+    button:hover{
+        transform: translateY(-10px) scale(1.03);
+    }
+
+    & .image{
+
+
+        img{
+            position: absolute;
+            width: 466px;
+        }
+
+        .rtgFoto {
+            position: relative;
+            margin-top: 200px;
+            z-index: -1;
+            background: var(--gradient-tokens);
+            width: 466px;
+            height: 466px;
+            border-radius: 92px;
+            
+            box-shadow: -20px 19px 20px 0px rgba(66, 68, 90, 0.288);
+          }
+
+        & .rtgNome{
+            
+            position: relative;
+            margin-left: 160px;
+            margin-top: -80px;
+            z-index: 1;
+            width: 334.6px;
+            height: 131.6px;
+            background: var(--gradient);
+            border-radius: 10px;          
+            box-shadow: -20px 19px 20px 0px rgba(66, 68, 90, 0.288);
+            animation: flutuar 5s ease-in-out infinite;
+
+            .infoRtg{
+                position: absolute;
+                margin-top: 42px;
+                margin-left: 45px;
+                display: grid;
+                grid-template-columns: auto 15px auto;
+            }
+
+            & .nome{
+                font-family: "Inter", sans-serif;
+                font-size: 28px;
+                font-weight: 700;
+                width: 100px;
+                line-height: 28px;
+            }
+
+            & .line {
+                width: 2px;
+                height: 60px;
+                background-color: black;
+              }
+              
+
+            & .turma07{
+
+                & h4{
+                    font-family: "Inter", sans-serif;
+                    font-size: 30.8px;
+                    font-weight: 700;
+                    margin-bottom: 0px;
+                }
+
+                & p{
+                    margin-top: 0px;
+                }
+            }
+
+        }
+    }
+
 }
 
 @keyframes flutuar{
@@ -254,4 +202,83 @@ h2{
     50%{
         transform:translateY(-20px);
     }
+}
+
+
+.Tokens{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: baseline;
+}
+
+
+.projects{
+    height: 900px;
+}
+.headingProjects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.rtgHeading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: var(--gradient);
+    width: 420px;
+    height: 77px;
+    box-shadow: -20px 19px 20px rgba(66, 68, 90, 0.288);
+    
+}
+
+.rtgHeading h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+}
+
+
+.rtgTokens{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 76.8px;
+    background: var(--gradient-tokens);
+    height: 405px;
+    width: 405px;
+}
+
+.textToken{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+
+   h4{
+        font-family: "Inter", sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 1;
+        margin: 0;
+   }
+
+   p{
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1;
+        margin: 0;
+        width: 330px;
+   }
 }
