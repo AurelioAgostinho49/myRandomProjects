@@ -91,8 +91,7 @@ section{
             }
         }
 
-<<<<<<< HEAD
-=======
+
         & .content{
             position: absolute;
             right: 150px;
@@ -107,13 +106,13 @@ section{
 
             }
 
->>>>>>> ac3cfac (alterações - CSS carro)
+
             & h2{
                 font-size: 8em;
                 line-height: 1em;
             }
 
-<<<<<<< HEAD
+
             .description{
                 color: #d9d9d9;
                 text-align: right;
@@ -131,7 +130,7 @@ section{
                 background-color: #beff1b;
                 color: black;
                 cursor: pointer;
-=======
+
             & .description{
                 color: #ababab;
                 font-size: 12px;
@@ -148,7 +147,6 @@ section{
                 background-color: #beff1b;
                 color:black;
                 cursor:pointer;
->>>>>>> ac3cfac (alterações - CSS carro)
             }
         }
 
@@ -192,4 +190,3 @@ section{
         }
     }
 }
-
